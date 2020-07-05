@@ -1,0 +1,10 @@
+marquee{
+    background-color:orange; color:white;
+}
+input{
+    padding:20px; border-color:red; border-radius:50px;text-align: center;
+}
+button{
+    padding:20px;
+    text-align: center;
+}
