@@ -8,17 +8,21 @@ import { ContactaDecouvrirComponent } from './contacta-decouvrir/contacta-decouv
 import { ProfilComponent } from './profil/profil.component';
 import { ModifierProfilComponent } from './modifier-profil/modifier-profil.component';
 import { AuthGuard } from './guards/auth.guard';
+import { ChangerNomUtulisateurComponent } from './changer-nom-utulisateur/changer-nom-utulisateur.component';
+
+
 
 
 const routes: Routes = [
-  { path: '', component: MonPremierComponent },
+  { path: '', component: PageConnexionComponent },
   { path: 'signup', component: MonPremierComponent },
   { path:'signin', component: PageConnexionComponent },
   { path: 'Modifier', component: ModifierMotDePasseComponent /*, canActivate:[AuthGuard]*/},
   { path: 'FileActualite', component: FileActualiteComponent /*, canActivate:[AuthGuard] */},
   { path:'Decouvrir', component: ContactaDecouvrirComponent /*, canActivate:[AuthGuard]*/},
   {path:'Profil', component:ProfilComponent /*, canActivate:[AuthGuard]*/},
-  {path:'ModifierProfil', component:ModifierProfilComponent /*, canActivate:[AuthGuard]*/}
+  {path:'ModifierProfil', component:ModifierProfilComponent /*, canActivate:[AuthGuard]*/},
+  { path:'Changer', component: ChangerNomUtulisateurComponent }
 
 ];
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from '../_modal';
 
 @Component({
   selector: 'app-file-actualite',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./file-actualite.component.css']
 })
 export class FileActualiteComponent implements OnInit {
+  
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  
+      ngOnInit() {
+  
+      }
+
 
 }

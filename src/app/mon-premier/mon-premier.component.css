@@ -2,7 +2,7 @@ marquee{
     background-color:orange; color:white;
 }
 input{
-    padding:20px; border-color:red; border-radius:50px;text-align: center;
+    padding:20px; border-color:grey; text-align: center;
 }
 button{
     padding:20px;
