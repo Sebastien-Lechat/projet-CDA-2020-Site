@@ -7,8 +7,9 @@ import { FileActualiteComponent } from './file-actualite/file-actualite.componen
 import { ContactaDecouvrirComponent } from './contacta-decouvrir/contacta-decouvrir.component';
 import { ProfilComponent } from './profil/profil.component';
 import { ModifierProfilComponent } from './modifier-profil/modifier-profil.component';
-import { AuthGuard } from './guards/auth.guard';
 import { ChangerNomUtulisateurComponent } from './changer-nom-utulisateur/changer-nom-utulisateur.component';
+import { AuthGuard } from './guards/auth.guard';
+
 
 
 
@@ -17,11 +18,11 @@ const routes: Routes = [
   { path: '', component: PageConnexionComponent },
   { path: 'signup', component: MonPremierComponent },
   { path:'signin', component: PageConnexionComponent },
-  { path: 'Modifier', component: ModifierMotDePasseComponent /*, canActivate:[AuthGuard]*/},
-  { path: 'FileActualite', component: FileActualiteComponent /*, canActivate:[AuthGuard] */},
-  { path:'Decouvrir', component: ContactaDecouvrirComponent /*, canActivate:[AuthGuard]*/},
-  {path:'Profil', component:ProfilComponent /*, canActivate:[AuthGuard]*/},
-  {path:'ModifierProfil', component:ModifierProfilComponent /*, canActivate:[AuthGuard]*/},
+  { path: 'Modifier', component: ModifierMotDePasseComponent, canActivate:[AuthGuard]},
+  { path: 'FileActualite', component: FileActualiteComponent, canActivate:[AuthGuard] },
+  { path:'Decouvrir', component: ContactaDecouvrirComponent, canActivate:[AuthGuard]},
+  {path:'Profil', component:ProfilComponent, canActivate:[AuthGuard]},
+  {path:'ModifierProfil', component:ModifierProfilComponent, canActivate:[AuthGuard]},
   { path:'Changer', component: ChangerNomUtulisateurComponent }
 
 ];

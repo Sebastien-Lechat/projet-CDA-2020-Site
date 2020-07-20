@@ -10,18 +10,18 @@ import { Router } from '@angular/router';
 })
 export class PageConnexionComponent implements OnInit {
 
+  isLoggedIn= false;
 
   constructor( private authService:AuthService, private router:Router, ) { }
 
   ngOnInit(): void {
   }
-  isLoggedIn= false;
+
+  
   login(form:NgForm){
-    this.authService.login({Email : form.value.Email, Password: form.value.Password}).subscribe(
+    this.authService.login({email : form.value.email, password: form.value.password}).subscribe(
       (data:any) => {
         console.log(data)
-        localStorage.setItem('token', data.result[0].token)
-        this.isLoggedIn = true
       },
       error => {
         console.log(error)

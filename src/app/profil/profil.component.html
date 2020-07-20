@@ -70,6 +70,7 @@
                                             <button style="background-color: white ; border:grey">Modifier Profil</button>
                                         </a>
                                     </td>
+                                    &nbsp;&nbsp;
                                     <td>
                                         <a routerLink="/ModifierProfil">
                                             <i class="fa fa-cog"></i>
@@ -79,9 +80,9 @@
                             </div>
                                 <div align="center" display="aline-block">
                                     <table>
-                                        <td>2 publications </td> 
-                                   <td> <a class="nav-link" routerLink="/FileActualite">600bonnés</a></td>
-                                   <td> <a class="nav-link" routerLink="/FileActualite">100bonnement</a></td>
+                                        <td>  {{ publication }} publications </td> &nbsp; &nbsp;&nbsp;
+                                   <td> {{ abonnement }} abonnés</td> &nbsp; &nbsp;&nbsp;
+                                   <td>  {{ abonnement2 }} abonnements</td>
                                     </table>
                                     </div>
                                     <div align="center">
@@ -111,6 +112,8 @@
        <img src="../../assets/img/Women.png" class="img-thumbnail"   alt=""
                                 width="100%" 
                                 pandding-top="100%">
+
+                                {{ publication }}
     </div>
   </div>
   <div class="card">

@@ -4,3 +4,16 @@ p {
   p span {
     float: left;
   }
+
+.card{
+  margin-bottom: 5vh;
+}
+.img-thumbnail{
+  padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    
+    height: 480px;
+    width: 680px;
+}

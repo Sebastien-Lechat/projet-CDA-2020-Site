@@ -18,19 +18,19 @@
                         <form method="post" #form="ngForm"  (ngSubmit)="login(form)">
                             <div class="form-group text-center">
                                
-                                <input ngModel type="text"  class="form-control" value=" Numéro de mobile ou e-mail" style="font-size:10px" >
+                                <input ngModel type="text"  class="form-control" placeholder=" Numéro de mobile ou e-mail" name='email' style="font-size:10px" >
                             </div>
                             <div class="form-group text-center">
-                                <input ngModel type="password" class="form-control" value="Mot de passe" style="font-size:10px">
+                                <input ngModel type="password" class="form-control" placeholder="Mot de passe" name="password" style="font-size:10px">
                             </div>
                             
 
                             <div class="form-group text-center">
                                
-                                    <a  ngModel href="" routerLink="/FileActualite"  class="btn btn-primary" width="200px">
+                                    <button type="submit"  class="btn btn-primary" width="200px">
                                        
                                         Connexion
-                                    </a>
+                                    </button>
                             </div>
 
                         </form>
