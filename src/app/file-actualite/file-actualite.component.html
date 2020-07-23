@@ -1,135 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src = " https : // use.fontawesome . com / a1c8b5ae1e.js " > </script>
-        <title>Connexion</title>
-        <link rel="stylesheet" href="file-actualite.component.css">
-    </head>
-    <body bgcolor="white">
-      
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-                <a class="navbar-brand" href="#"><img
-                    src="../../assets/img/ins.png" 
-                    alt=""
-                    width="150px"
-                    height="50px"
-                    pandding-top="60"
 
+<head>
+    <script src=" https : // use.fontawesome . com / a1c8b5ae1e.js ">
+    </script>
+    <title>Connexion</title>
+    <link rel="stylesheet" href="file-actualite.component.css">
+</head>
 
+<body bgcolor="white">
 
-                /></a>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" routerLink="/FileActualite"><img src="../../assets/img/ins.png" alt="" width="150px" height="50px" pandding-top="60" /></a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="offset-9 navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                    <a class="nav-link" routerLink="/FileActualite"><i class="fa fa-home"></i><span class="sr-only">(current)</span></a>
+                        <a class="nav-link" routerLink="/FileActualite"><i class="fa fa-home"></i><span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" routerLink="/FileActualite"><i class="fa fa-paper-plane"></i></a>
+                        <a class="nav-link" routerLink="/FileActualite"><i class="fa fa-paper-plane"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" routerLink="/Decouvrir"><i class="fa fa-compass"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-heart"></i></a>
+                        <a class="nav-link" routerLink="/FileActualite"><i class="fa fa-heart"></i></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="/Profil"> <img
-                            src="../../assets/img/IMG.jpg" 
-                            alt=""
-                            height="15px" 
-                            width="15px" 
-                            style="border-radius:50% !important"
-                            pandding-top="60"
-                        /></a>
-                </li>
+                        <a class="nav-link" routerLink="/Profil"> <img src="../../assets/img/IMG.jpg" alt="" height="15px" width="15px" style="border-radius:50% !important" pandding-top="60" /></a>
+                    </li>
                 </ul>
-                </div>
-            </nav>
-<br>
-            <!--  -->
-            <br>
-            <div class="card col-8" *ngFor="let item of publications">
-              
-                <div class="card-header">
-                    <div class="media">
-                  
-                        <img src="{{ item.media_url}}" width="30px" height="30px" style="border-radius:50% !important" class="mr-3" alt="...">
-                        <div class="media-body">
-                            <p> <span> <h5 class="mt-0">Bousso      </h5> </span>     
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: white; border-color:ivory; text-align:center; height:30px; color:black">
+            </div>
+        </nav>
+        <br>
+        <!--  -->
+        <br>
+        <div class="card col-8" *ngFor="let item of publications">
+
+            <div class="card-header">
+                <div class="media">
+
+                    <img src="{{ item.media_url}}" width="30px" height="30px" style="border-radius:50% !important" class="mr-3" alt="...">
+                    <div class="media-body">
+                        <p> <span> <h5 class="mt-0">Bousso      </h5> </span>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: white; border-color:ivory; text-align:center; height:30px; color:black">
                                     ...
                                   </button>
-                                </p> 
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Signaler comme inapproprié</h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        </p>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Signaler comme inapproprié</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                           </button>
-                                        </div>
-                                        <div class="modal-body">
-                                          Souhaitez vous signalez cette publication?
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                          <button type="button" class="btn btn-primary">Signaler</button>
-                                        </div>
-                                      </div>
                                     </div>
-                                  </div>                            
-                        </div>
-                      </div>
-                      <br>
-                      <div class="col-12 row">
-                        <h4>{{ item.dateC}}</h4>
-                      
-                        <img src="{{ item.media_url }}" width="150%" height="100px"  class="img-thumbnail"  alt="">
-                    
-                      </div>
-                </div>
-                <div class="card-boby">
-                    <div  class="row col-12">
-                        
-                                <a class="nav-link" href="#"><i class="fa fa-heart"></i></a>
-                                <a class="nav-link" href="#"><i class="fa fa-comment-o"></i></a>
-                                <a class="nav-link" href="#"><i class="fa fa-paper-plane"></i></a>
-    
-                    </div>
-                    <div>
-                      16 Jaime
-                  
-                    </div>
-                    <div *ngFor="let commentaire of item.commentaires"> 
-                      <h5>{{ commentaire.text }}</h5>
-                      <h6>{{ commentaire.dateC }}</h6>
-                    </div>
-                    <div>
-                        <form action="">
-                            <div class="form-row">
-                                <input type="text" name="" class="col-9 form-control" id=""  value=" {{ item.text }}">
-                                <input type="submit" class=" btn btn-outline-success" style="margin-left: 10px"value="publier">
+                                    <div class="modal-body">
+                                        Souhaitez vous signalez cette publication?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Signaler</button>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                    <br>
-                    <br>
+                </div>
+                <br>
+                <div class="col-12 row">
+                    <h4>{{ item.dateC}}</h4>
+
+                    <img src="{{ item.media_url }}" width="150%" height="100px" class="img-thumbnail" alt="">
+
                 </div>
             </div>
-                <br>
+            <div class="card-boby">
+                <div class="row col-12">
 
+                    <a class="nav-link"><i class="fa fa-heart"></i></a>
+                    <a class="nav-link"><i class="fa fa-comment-o"></i></a>
+                    <a class="nav-link"><i class="fa fa-paper-plane"></i></a>
+
+                </div>
+                <div>
+                    16 Jaime
+
+                </div>
+                <div *ngFor="let commentaire of item.commentaires">
+                    <h5>{{ commentaire.text }}</h5>
+                    <h6>{{ commentaire.dateC }}</h6>
+                </div>
+                <div>
+                    <form action="">
+                        <div class="form-row">
+                            <input type="text" name="" class="col-9 form-control" id="" value=" {{ item.text }}">
+                            <input type="submit" class=" btn btn-outline-success" style="margin-left: 10px" value="publier">
+                        </div>
+                    </form>
+                </div>
                 <br>
-               </div>
-           
-    </body>
-    </html>
+                <br>
+            </div>
+        </div>
+        <br>
+
+        <br>
+    </div>
+
+</body>
+
+</html>
